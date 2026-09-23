@@ -1,4 +1,4 @@
-const CACHE='jianji-history-1.0.0';
+const CACHE='jianji-history-2.0.0';
 const ROOT=new URL('./',self.location.href).href;
 self.addEventListener('install',event=>{
   event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll([ROOT,new URL('icon.svg',ROOT).href])));
